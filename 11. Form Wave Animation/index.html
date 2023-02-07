@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!--  -->
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--  -->
+    <!-- SEO OPTIMIZATION -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A brief description of a website" />
+    <meta name="author" content="Jakub Szpytka" />
+    <title>Form Input Wave</title>
+    <!--  -->
+  </head>
+  <body>
+    <div class="container">
+      <label for="email"><h1 for="email">Please Login</h1></label>
+      <form>
+        <div class="form-control">
+          <input type="text" id="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-control">
+          <input type="password" id="password" required />
+          <label for="password">Password</label>
+        </div>
+        <button class="btn">Login</button>
+        <p class="text">Don't have an account? <a href="#">Register</a></p>
+      </form>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
