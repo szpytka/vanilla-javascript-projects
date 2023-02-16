@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!--  -->
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--  -->
+    <!-- SEO OPTIMIZATION -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A brief description of a website" />
+    <meta name="author" content="Jakub Szpytka" />
+    <title>Hangman</title>
+    <!--  -->
+  </head>
+  <body>
+    <h1>Hangman</h1>
+    <p>Find the hidden word - Enter a letter</p>
+    <div class="game-container">
+      <svg class="figure-container" height="250" width="200">
+        <!-- rod -->
+        <line x1="60" y1="20" x2="140" y2="20" />
+        <line x1="140" y1="20" x2="140" y2="50" />
+        <line x1="60" y1="20" x2="60" y2="230" />
+        <line x1="20" y1="230" x2="100" y2="230" />
+        <!-- head -->
+        <circle cx="140" cy="70" r="20" class="figure-part" />
+        <!-- body -->
+        <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+        <!-- arms -->
+        <line x1="140" y1="100" x2="120" y2="130" class="figure-part" />
+        <line x1="140" y1="100" x2="160" y2="130" class="figure-part" />
+        <!-- legs -->
+        <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+        <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+      </svg>
+
+      <div class="wrong-letters-container">
+        <div id="wrong-letters"></div>
+      </div>
+
+      <div class="word" id="word"></div>
+    </div>
+    <!-- Container for final message -->
+    <div class="popup-container" id="popup-container">
+      <div class="popup">
+        <h2 id="final-message"></h2>
+        <button id="play-button">Play Again</button>
+      </div>
+    </div>
+    <!-- Notification -->
+    <div class="notification-container" id="notification-container">
+      <p>You have already entered this letter</p>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
