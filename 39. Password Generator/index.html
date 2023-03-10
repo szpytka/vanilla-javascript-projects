@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!--  -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--  -->
+    <!-- SEO OPTIMIZATION -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A brief description of a website" />
+    <meta name="author" content="Jakub Szpytka" />
+    <title>Password Generator</title>
+    <!--  -->
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+      <div class="settings">
+        <div class="setting">
+          <label for="length">Password Length</label>
+          <input type="number" id="length" min="4" max="20" value="15" />
+        </div>
+        <div class="setting">
+          <label for="uppercase">Include Uppercase Letters </label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="setting">
+          <label for="lowercase">Include Lowercase Letters </label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="setting">
+          <label for="numbers">Include Numbers </label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+        <div class="setting">
+          <label for="symbols">Include Symbols </label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
+      </div>
+      <button class="btn btn-large" id="generate">Generate</button>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
