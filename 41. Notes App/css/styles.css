@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+/* THE PROJECT CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+body {
+  background-color: #7bdaf3;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  margin: 0;
+}
+
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #9ec862;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+.note {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  height: 400px;
+  width: 400px;
+  border-radius: 11px;
+}
+
+.note .tools {
+  background-color: #9ec862;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #f0f0f0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 360px;
+  width: 100%;
+  padding: 20px;
+  appearance: none;
+  border-radius: inherit;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  padding: 20px;
+  font-size: 1.2rem;
+}
